@@ -44,7 +44,7 @@ extern HWND Window;
 #define FALSE 0
 #define TRUE 1
 #endif
-#ifdef __APPLE__
+#if defined(__APPLE__) || defined(__FreeBSD__)
 #include <stdlib.h>
 #elif __sun
 #include <alloca.h>
